@@ -1,0 +1,67 @@
+ChangeLog for Linux Kernel for TC18
+-----------------------------------
+
+Version 2.00.00 (Isko, 2006)
+----------------------------------
+- bringup versionen for TC18 on basis 2.6.12
+
+Version 2.00.02 (Isko,24. may 2006)
+----------------------------------
+- changed mem_read, and mem_write
+
+Version 2.00.03 (Isko,06. jul 2006)
+----------------------------------
+- watchdog,button  repeat
+
+Version 2.00.04 (Isko,10. jul 2006)
+----------------------------------
+- add command for generate System.srec
+
+Version 2.01.00 (Isko,08. aug 2006)
+----------------------------------
+- little endian for DSP ram, System.srec -> system18.sre
+
+Version 2.01.01 (Isko,24. aug 2006)
+----------------------------------
+- FE12980: implement gratuituos ARP for TC18
+- FE12981: configuration of 2nd gateway
+
+Version 2.01.02 (Isko,24. aug 2006)
+----------------------------------
+new structure tag in ocp_enet_private instead of use static var.
+
+Version 2.01.03 (Isko,12. sept 2006)
+----------------------------------
+show backtrace in case of send signal SIGKILL or SIGTERM
+
+Version 2.02.00 (Isko,03. dec. 2006)
+----------------------------------
+FE:13143 support of 440GR Rev. B
+
+Version 2.02.01 (WoKl,11 jan. 2007)
+----------------------------------
+- Support for second flash chip
+- FE:13123 LAN Leds blink at 10Mbps link
+
+Version 2.02.02 (WoKl,20 mar. 2007)
+----------------------------------
+- Memory leak corrected error# 13249
+
+
+2.02.93 -> 2010-11-26 
+	Flash partition for Save LS1 logs added (no other source-code changes version 2.02.02)
+
+2.02.93 -> 2010-11-29 
+	First attempt with more optimized build (only linix-kernel-tc18\build will be checked-out on windows build server)
+
+2.02.94 -> 2010-11-29 
+	resize partition
+
+2.03.00 -> 2010-12-03 
+	like version 2.02.94 but with a more final version number (modifications since 2.02.02 (version in KCS 9.0): Flash partition for LS1 Trace Buffer added
+
+2.04.00 -> 2012-07-26 
+	SPR104290 (LS1 V2 not reachable from other subnet after firmware upgrade 9.1.1.0.0.82) fixed by setting the LAN1 mode in the Linux network isntead of init script.
+
+2.05.00 -> 2016-08-04 
+	Attempt to fix bug 655551:LS1 v2 firmware flashing issue

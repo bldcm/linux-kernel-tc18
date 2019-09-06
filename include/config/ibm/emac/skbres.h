@@ -1,0 +1,1 @@
+#define CONFIG_IBM_EMAC_SKBRES 0
